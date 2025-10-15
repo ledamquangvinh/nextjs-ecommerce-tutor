@@ -41,7 +41,10 @@ export default function Page() {
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Button variant="outline" onClick={() => removeItem(item.id)}>
+                  <Button
+                    variant="outline"
+                    onClick={() => removeItem && removeItem(item.id)}
+                  >
                     -
                   </Button>
                   <span className="text-lg font-semibold">
