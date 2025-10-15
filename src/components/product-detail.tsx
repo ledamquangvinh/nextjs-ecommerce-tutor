@@ -49,7 +49,7 @@ export default function ProductDetail({ product }: Props) {
         )}
 
         <div className="flex items-center space-x-4">
-          <Button variant="outline" onClick={() => removeItem(product.id)}> - </Button>
+          <Button variant="outline" onClick={() => removeItem && removeItem(product.id)}> - </Button>
           <span className="text-lg font-semibold"> {quantity} </span>
           <Button variant="outline" onClick={onAddItem()}> + </Button>
         </div>

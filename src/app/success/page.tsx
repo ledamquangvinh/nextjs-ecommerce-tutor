@@ -8,7 +8,7 @@ import { useCartStore } from "../../../store/cart-store";
 export default function SuccessPage() {
   const { clearCart } = useCartStore();
   useEffect(() => {
-    clearCart();
+    clearCart?.();
   }, [clearCart]);
   return (
     <div className="container mx-auto px-4 py-8 text-center">
