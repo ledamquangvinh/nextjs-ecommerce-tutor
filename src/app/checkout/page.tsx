@@ -37,25 +37,21 @@ export default function Page() {
                 <div className="flex justify-between">
                   <span className="font-medium"> {item.name} </span>
                   <span className="font-semibold">
-                    {" "}
                     ${((item.price * item.quantity) / 100).toFixed(2)}{" "}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Button variant="outline" onClick={() => removeItem(item.id)}>
-                    {" "}
-                    -{" "}
+                    -
                   </Button>
                   <span className="text-lg font-semibold">
-                    {" "}
                     {item.quantity}{" "}
                   </span>
                   <Button
                     variant="outline"
                     onClick={() => addItem({ ...item, quantity: 1 })}
                   >
-                    {" "}
-                    +{" "}
+                    +
                   </Button>
                 </div>
               </li>
